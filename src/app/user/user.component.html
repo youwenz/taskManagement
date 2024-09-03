@@ -1,0 +1,12 @@
+<app-card>
+  <!-- wrap event listener in paranthesis -->
+  <button [class.active]="selected" (click)="onSelectUser()">
+    <!-- properties binding -->
+    <img
+      [src]="imagePath"
+      [alt]="name"
+    />
+    <!-- string interpolation using double curly braces -->
+    <span>{{ name }}</span>
+  </button>
+</app-card>
